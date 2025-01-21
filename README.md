@@ -9,5 +9,4 @@ Skills applied in this project:
 - React + Custom hooks
 - Responsive design
 - Modularized CSS
-- API requests
-
+- API requests (https://fakestoreapi.com/)
