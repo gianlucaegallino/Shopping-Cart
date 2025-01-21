@@ -3,10 +3,10 @@ A shopping cart and store page made using React.
 My 3rd react project. 
 
 Skills applied in this project:
-- Client-Side Routing (React Router)
-- Test Driven Development (Vitest)
-- Type safety (PropTypes)
 - React + Custom hooks
+- Test Driven Development (Vitest)
+- Client-Side Routing (React Router)
+- Type safety (PropTypes)
 - Responsive design
 - Modularized CSS
 - API requests (https://fakestoreapi.com/)
