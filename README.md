@@ -13,5 +13,7 @@ My 3rd react project.
 
 
 ### Asset Credits
-Nirpa font (Personal Use) by Flawless and co. (https://creativemarket.com/Flawlessandco)
+Nirpa font (Personal Use, logo) by Flawless and co. (https://creativemarket.com/Flawlessandco)
+Playfair font by google
+Icons from lucide
 Hero photo by Pixabay (https://www.pexels.com/photo/tree-with-brunch-and-green-leaves-during-sunset-70365/)

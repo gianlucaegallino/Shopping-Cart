@@ -1,0 +1,43 @@
+.title {
+  color: var(--myBlack);
+  background-color: var(--myWhite);
+  font-family: Nirpa;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0px;
+}
+.navBar {
+  background-color: var(--myWhite);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  top: 0;
+  position: sticky;
+  padding: 10px 20px;
+}
+
+svg:hover, p:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  color: var(--myBlack);
+}
+
+@media (max-width: 400px){
+  .buttons{
+    gap:10px
+  }
+
+  .navBar {
+    padding: 10px 15px;
+  }
+  
+}

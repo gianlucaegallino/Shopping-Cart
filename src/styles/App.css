@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Nirpa;
+  src: url(../assets/Nirpa.ttf);
+}
+
+@font-face {
+  font-family: PlayFair;
+  src: url(../assets/PlayfairDisplay-Regular.ttf);
+}
+
+:root {
+  --myWhite: #fffffa;
+  --myGreen: #2A7A56;
+  --myGold: #ffcc4c;
+  --myBlack: #131200;
+}
+
+body{
+  height: 200vh;
+  font-family: PlayFair;
+}

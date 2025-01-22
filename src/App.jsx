@@ -1,9 +1,12 @@
-import "./styles/App.module.css";
-
+import "./styles/normalize.css"
+import "./styles/App.css";
+import NavBar from "./components/NavBar"; 
+import StorePage from "./components/StorePage"
 export default function App() {
   return (
     <>
-      <h1>test</h1>
+      <NavBar/>
+      <StorePage/>
     </>
   );
 }
