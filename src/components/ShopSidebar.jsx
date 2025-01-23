@@ -36,6 +36,7 @@ export default function ShopSidebar() {
           ]}
         />
       </div>
+
       <Link className={s.li} to="/cart">
         {" "}
         <button className={s.button}> Go to Cart</button>
