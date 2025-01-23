@@ -30,7 +30,7 @@ export default function AmountSelector() {
           <button className={s.buttonleft} onClick={handleLess}>
             <Minus />
           </button>
-          <input type="text" className={s.input} value={value} />
+          <input type="text" className={s.input} value={value} readOnly/>
           <button className={s.buttonright} onClick={handleMore}>
             <Plus />
           </button>

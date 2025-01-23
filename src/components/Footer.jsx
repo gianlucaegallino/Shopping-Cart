@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={s.form}>
           <input
             className={s.input}
-            type="text"
+            type="email"
             placeholder="Your Email Address"
           />
           <button className={s.btn} type="button">

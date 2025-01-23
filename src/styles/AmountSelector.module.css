@@ -32,6 +32,7 @@
   border-radius: 5px 0px 0px 5px;
   transition: opacity 0.2s;
   padding-bottom: 2px;
+  border: 0px;
   padding-top: 2px;
 }
 
@@ -41,6 +42,7 @@
   background-color: var(--myBlack);
   color: var(--myWhite);
   padding: 0px;
+  border: 0px;
   max-width: 30px;
   max-height: 30px;
   display: flex;
@@ -58,7 +60,7 @@
   background-color: var(--myGreen);
   color: var(--myWhite);
   padding: 0px;
-
+  border: 0px;
   min-height: 30px;
   width: 100px;
   display: flex;
@@ -71,9 +73,12 @@
   transition: scale 0.2s;
 }
 
-.addbutton:hover {
-  scale: 0.95;
+.addbutton:hover{
+  transition: scale 125ms;
+  scale:0.98;
+  cursor: pointer;
 }
+
 
 .buttonleft:hover,
 .buttonright:hover {
