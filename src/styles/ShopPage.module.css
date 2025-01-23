@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 10fr;
-    height: 100vh;
+    
 }
 
 .shopMainSection{

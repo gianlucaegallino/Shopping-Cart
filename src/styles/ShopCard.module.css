@@ -1,23 +1,35 @@
 .shopCard {
-  min-width: 500px;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  justify-items: center;
   align-items: center;
-  padding: 40px;
-  gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: rgba(149, 157, 165, 0.329) 0px 8px 24px;
   transition: transform 0.2s;
+  background-color: var(--myWhite);
+
+  align-self: center;
+  justify-self: center;
 }
 
 .shopCard:hover {
-  transform: scale(0.98);
-  cursor: pointer;
+  transform: scale(0.99);
+  
 }
 
-img {
-  width: 400px;
-  height: 400px;
+.info {
+  width: 300px;
+}
+.img {
+  width: 250px;
+  height: 250px;
   object-fit: contain;
   object-position: center;
 }
@@ -40,10 +52,10 @@ img {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  width: 100%;
+  min-width: 100%;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 @media (max-width: 1100px) {

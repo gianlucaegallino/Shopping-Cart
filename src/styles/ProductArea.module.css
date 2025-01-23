@@ -1,3 +1,13 @@
-.productArea{
-    background-color: aquamarine;
+.productArea {
+  background-color: var(--myWhite);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  max-width: 100%;
+  height: calc(100vh - 170px);
+  animation-name: none;
+  overflow: scroll;
+  gap: 50px;
+  padding: 30px;
+  overflow-x: hidden;
 }
+
