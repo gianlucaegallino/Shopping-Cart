@@ -24,6 +24,13 @@
   
 }
 
+.button:hover{
+  transition: scale 125ms;
+  scale:0.98;
+  cursor: pointer;
+}
+
+
 .info {
   width: 300px;
 }
