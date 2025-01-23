@@ -6,8 +6,8 @@ export default function NavBar(){
         <div className={style.navBar}>
             <h1 className={style.title}>vixed</h1>
             <div className={style.buttons}>
-                <p>Home</p>
-                <p>Shop</p>
+                <p className={style.link}>Home</p>
+                <p className={style.link}>Shop</p>
                 <ShoppingCart color="black" size={28} />
             </div>
         </div>
