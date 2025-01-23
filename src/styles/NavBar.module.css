@@ -23,6 +23,10 @@ svg:hover, .link:hover {
   cursor: pointer;
 }
 
+.link{
+  color: var(--myBlack);
+  text-decoration: none;
+}
 .buttons {
   display: flex;
   flex-direction: row;

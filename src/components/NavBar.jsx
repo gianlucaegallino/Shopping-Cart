@@ -1,15 +1,26 @@
-import { ShoppingCart } from 'lucide-react';
-import style from "../styles/NavBar.module.css"
+import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
-export default function NavBar(){
-    return(
-        <div className={style.navBar}>
-            <h1 className={style.title}>vixed</h1>
-            <div className={style.buttons}>
-                <p className={style.link}>Home</p>
-                <p className={style.link}>Shop</p>
-                <ShoppingCart color="black" size={28} />
-            </div>
-        </div>
-    )
+import style from "../styles/NavBar.module.css";
+
+export default function NavBar() {
+  return (
+    <div className={style.navBar}>
+      <h1 className={style.title}><Link className={style.link} to="/">vixed</Link></h1>
+
+      <div className={style.buttons}>
+        <p className={style.link}>
+          <Link className={style.link} to="/">Home</Link>
+        </p>
+        <p className={style.link}>
+          <Link className={style.link} to="/shop">Shop</Link>
+        </p>
+
+        <Link to="/cart">
+          {" "}
+          <ShoppingCart color="black" size={28} />
+        </Link>
+      </div>
+    </div>
+  );
 }

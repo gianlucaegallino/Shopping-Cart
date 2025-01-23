@@ -1,19 +1,27 @@
+import { Link } from "react-router-dom";
 import s from "../styles/Footer.module.css";
+
 export default function Footer() {
   return (
     <div className={s.Footer}>
       <div className={s.colContainerNews}>
         <h4>Newsletter</h4>
         <div className={s.form}>
-            <input className={s.input}type="text" placeholder="Your Email Address" />
-            <button className={s.btn}type="button">Sign Up</button>
+          <input
+            className={s.input}
+            type="text"
+            placeholder="Your Email Address"
+          />
+          <button className={s.btn} type="button">
+            Sign Up
+          </button>
         </div>
       </div>
       <div className={s.colContainer}>
         <h4>Useful links</h4>
         <p className={s.link}>About</p>
         <p className={s.link}>Contact</p>
-        <p className={s.link}>Shop</p>
+        <p className={s.link}><Link className={s.link} to="/shop">Shop</Link></p>
         <p className={s.link}>Employment</p>
         <p className={s.link}>Terms of Service</p>
       </div>

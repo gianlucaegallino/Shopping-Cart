@@ -1,0 +1,4 @@
+.sidebar{
+    background-color: red;
+    grid-row: 1 / 3;
+}
