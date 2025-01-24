@@ -13,6 +13,10 @@ export default function CartDataProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (id, amt) => {
+    //check for invalid amount
+    if (amt <= 0 || amt > 10) return;
+
+
     //Get the name and the price of the item.
 
     const pos = products.map((e) => e.id).indexOf(id);

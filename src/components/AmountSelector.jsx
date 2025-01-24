@@ -11,21 +11,28 @@ export default function AmountSelector({ id }) {
   const { addToCart } = useContext(CartContext);
 
   function handleMore() {
-    if (value < 10) {
-      let newvalue = value + 1;
+    let newvalue = parseInt(value) + 1;
+    if (newvalue <= 10) {
       setValue(newvalue);
     }
   }
 
   function handleLess() {
-    if (value > 0) {
-      let newvalue = value - 1;
+    let newvalue = parseInt(value) - 1;
+    if (newvalue >= 0) {
+
       setValue(newvalue);
     }
   }
 
+  function handleChange(e) {
+    if (e.target.value > 0 && e.target.value <=10) setValue(parseInt(e.target.value))
+    else if (e.target.value == "") setValue(0);
+  }
+
+
   function handleAdd() {
-    addToCart(id, value);
+    addToCart(id, parseInt(value));
     setValue(0);
   }
 
@@ -35,7 +42,7 @@ export default function AmountSelector({ id }) {
         <button className={s.buttonleft} onClick={handleLess}>
           <Minus />
         </button>
-        <input type="text" className={s.input} value={value} readOnly />
+        <input type="text" className={s.input} value={value} onChange={handleChange} />
         <button className={s.buttonright} onClick={handleMore}>
           <Plus />
         </button>
