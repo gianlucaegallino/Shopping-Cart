@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "./productContext.js";
-import PropTypes from "prop-types";
+
+
 import ShopCard from "./ShopCard.jsx";
 import s from "../styles/ProductArea.module.css";
 
@@ -20,6 +21,7 @@ export default function ProductArea() {
         prodName={p.title}
         imageUrl={p.image}
         price={p.price}
+        id={p.id}
       />
     );
   });
@@ -30,7 +32,3 @@ export default function ProductArea() {
     </div>
   );
 }
-
-ProductArea.propTypes = {
-  amount: PropTypes.number,
-};

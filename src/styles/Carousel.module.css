@@ -14,6 +14,11 @@
   font-size: 40px;
 }
 
+.link{
+  text-decoration: none;
+  color:var(--myBlack)
+}
+
 @keyframes scrollInfinite {
   from {
     transform: translateX(0%);

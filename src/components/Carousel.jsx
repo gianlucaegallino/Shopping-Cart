@@ -3,6 +3,7 @@ import { useContext } from "react";
 import CoolCard from "./CoolCard.jsx";
 import s from "../styles/Carousel.module.css";
 import { ProductContext } from "./productContext.js";
+import { Link } from "react-router-dom";
 
 export default function Carousel({ amount = 6 }) {
   //gets products from upper context
@@ -17,12 +18,9 @@ export default function Carousel({ amount = 6 }) {
 
   let render = prods.map((p) => {
     return (
-      <CoolCard
-        key={p.id}
-        prodName={p.title}
-        imageUrl={p.image}
-        price={p.price}
-      />
+      <Link key={p.id} className={s.link} to="/shop">
+        <CoolCard prodName={p.title} imageUrl={p.image} price={p.price} />
+      </Link>
     );
   });
 

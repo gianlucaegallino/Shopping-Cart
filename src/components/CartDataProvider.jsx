@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CartContext } from "./cartContext.js";
-import { clear } from "@testing-library/user-event/dist/cjs/utility/clear.js";
+import { useContext } from "react";
+import { ProductContext } from "./productContext.js";
 
 //Cart data provider
 
@@ -8,35 +9,44 @@ import { clear } from "@testing-library/user-event/dist/cjs/utility/clear.js";
 //TODO: Add validations, status, etc.
 
 export default function CartDataProvider({ children }) {
-  const [cartItems, setCartItems] = useState([
-    {
-      name: "Green Pendant Necklace",
-      amount: 1,
-      price: 25.99,
-      key: "gp",
-    },
-    {
-      name: "Black Cotton T-Shirt",
-      amount: 2,
-      price: 15.49,
-      key: "bc",
-    },
-    {
-      name: "Gold Ring",
-      amount: 1,
-      price: 45.0,
-      key: "gr",
-    },
-    {
-      name: "Nature Print Hoodie",
-      amount: 1,
-      price: 35.99,
-      key: "np",
-    },
-  ]);
+  //gets products from upper context
+  const products = useContext(ProductContext);
 
-  const addToCart = (item) => {
-    setCartItems((prevCart) => [...prevCart, item]);
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (id, amt) => {
+    //Get the name and the price of the item.
+
+    const pos = products.map((e) => e.id).indexOf(id);
+    const prc = products[pos].price;
+    const nm = products[pos].title;
+    console.log(products[pos]);
+
+    //check if the item is present in the cart
+
+    const cartIndex = cartItems.map((i) => i.id).indexOf(id);
+
+    if (cartIndex >= 0) {
+      //if present, add the amount to the item
+      let newItems = [...cartItems];
+
+      //safety check: no more than 10 units per item
+      let newamount = newItems[cartIndex].amount + amt;
+      if (newamount > 10) {
+        newItems[cartIndex].amount = 10;
+      } else {
+        newItems[cartIndex].amount = newamount;
+      }
+
+      //sets new cart
+      setCartItems(newItems);
+    } else {
+      //if not present, add the item and amount
+      setCartItems((cartItems) => [
+        ...cartItems,
+        { name: nm, amount: amt, price: prc, id: id },
+      ]);
+    }
   };
 
   const removeFromCart = (id) => {
@@ -46,6 +56,10 @@ export default function CartDataProvider({ children }) {
   const clearCart = () => {
     setCartItems([]);
   };
+
+  //TODO: Implement decrease and increase
+  const increase = () => {};
+  const decrease = () => {};
 
   return (
     <CartContext.Provider

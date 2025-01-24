@@ -5,7 +5,7 @@ export default function ItemList({ items = [] }) {
   if (items.length > 0){
     display = items.map((item) => {
         return (
-          <div className={s.item} key={item.key}>
+          <div className={s.item} key={item.id}>
             <p className={s.itemtext}>{item.name}</p>
             <p className={s.itemtext}>{item.amount}</p>
           </div>
