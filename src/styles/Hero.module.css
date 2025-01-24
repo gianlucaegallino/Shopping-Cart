@@ -1,51 +1,51 @@
 .heroSection {
+  align-items: center;
   background-color: var(--myBlack);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/hero.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 850px;
+  color: var(--myWhite);
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
-  color: var(--myWhite);
+  min-height: 850px;
   padding: 0px 60px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/hero.jpg);
 }
 .heroElements {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 600px;
 }
 
 h2 {
-  font-weight: 600;
   font-size: 94px;
+  font-weight: 600;
   margin: 0px;
 }
 
 h3 {
-  font-weight: 400;
   font-size: 30px;
+  font-weight: 400;
 }
 
 .button {
-  border: 0px;
-  padding: 15px 25px;
   background-color: var(--myGreen);
-  color: var(--myWhite);
+  border: 0px;
   border-radius: 50px;
+  color: var(--myWhite);
   font-size: 30px;
-  width: 80%;
+  padding: 15px 25px;
   transition: scale 450ms;
+  width: 80%;
   width: 100%;
 }
 
 .button:hover {
-  scale: 0.98;
   cursor: pointer;
+  scale: 0.98;
 }
 
 .li {
@@ -54,10 +54,10 @@ h3 {
 
 @media (max-width: 1100px) {
   .heroElements {
-    justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .heroSection {
@@ -67,10 +67,10 @@ h3 {
 
 @media (max-width: 800px) {
   .heroElements {
-    justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .heroSection {
@@ -89,10 +89,10 @@ h3 {
 
 @media (max-width: 400px) {
   .heroElements {
-    justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .heroSection {

@@ -2,16 +2,18 @@ import "./styles/normalize.css";
 import "./styles/App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function App({children}) {
-  const [cartItems, setCartItems] = useState([])
+export default function App({ children }) {
   return (
     <>
-      <NavBar items={cartItems} />
+      <NavBar />
       {children}
-
       <Footer />
     </>
   );
 }
+
+App.propTypes = {
+  children: PropTypes.node,
+};

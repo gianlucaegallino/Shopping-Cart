@@ -14,7 +14,6 @@ export default function CartSidebar() {
         <OrderSummary items={cartItems} />
       </div>
 
-      {/* TODO: add wipe after all this happens */}
       <Link className={s.li} to="/">
         {" "}
         <button className={s.button} onClick={clearCart}>

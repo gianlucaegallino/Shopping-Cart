@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
-import { ProductContext } from "./productContext.js"
+import { ProductContext } from "./productContext.js";
+import PropTypes from "prop-types";
 
 //API url
 const URL = "https://fakestoreapi.com/products/category/";
 
 //Data provider for product data fetching
-
-//TODO: Add props
-//TODO: Add validations, status, etc.
-
 
 export default function ProductDataProvider({ children }) {
   const [products, setProducts] = useState([]);
@@ -44,3 +41,7 @@ export default function ProductDataProvider({ children }) {
     </ProductContext.Provider>
   );
 }
+
+ProductDataProvider.propTypes = {
+  children: PropTypes.node,
+};

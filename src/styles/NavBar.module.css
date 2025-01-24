@@ -1,61 +1,59 @@
 .title {
-  color: var(--myBlack);
   background-color: var(--myWhite);
+  color: var(--myBlack);
   font-family: Nirpa;
   font-size: 4rem;
   font-weight: 400;
   margin: 0px;
 }
 .navBar {
+  align-items: center;
   background-color: var(--myWhite);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  top: 0;
-  position: sticky;
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
   z-index: 500;
 }
 
-svg:hover, .link:hover {
+svg:hover,
+.link:hover {
   cursor: pointer;
 }
 
-.link{
+.link {
+  align-items: center;
   color: var(--myBlack);
-  text-decoration: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .buttons {
+  align-items: center;
+  color: var(--myBlack);
   display: flex;
   flex-direction: row;
   gap: 40px;
-  align-items: center;
   justify-content: center;
-  color: var(--myBlack);
 }
 
-.number{
-  padding: 0px;
+.number {
+  color: var(--myBlack);
   margin: 0px;
+  padding: 0px;
   text-decoration: none;
-  color: var(--myBlack);
 }
 
-
-
-@media (max-width: 400px){
-  .buttons{
-    gap:10px
+@media (max-width: 400px) {
+  .buttons {
+    gap: 10px;
   }
 
   .navBar {
     padding: 10px 15px;
   }
-  
 }

@@ -15,14 +15,16 @@ export default function ItemList() {
           <p className={s.itemtext}>{item.name}</p>
 
           <p className={s.itemtext}>{"Qty: " + item.amount}</p>
-          <p className={s.itemtext}>{"Total: $" + (item.price * item.amount).toFixed(2)}</p>
-          <button className={s.button} onClick={()=>removeFromCart(item.id)}><X /></button>
-
+          <p className={s.itemtext}>
+            {"Total: $" + (item.price * item.amount).toFixed(2)}
+          </p>
+          <button className={s.button} onClick={() => removeFromCart(item.id)}>
+            <X />
+          </button>
         </div>
       );
     });
   }
-
 
   return <div className={s.list}>{display}</div>;
 }

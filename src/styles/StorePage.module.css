@@ -1,5 +1,5 @@
-.storePage{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+.storePage {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }

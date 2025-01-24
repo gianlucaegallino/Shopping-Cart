@@ -1,98 +1,97 @@
 .amountSelector {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 .button {
+  align-items: center;
+  background-color: var(--myBlack);
+  border-radius: 0px;
+  color: var(--myWhite);
+  display: flex;
   font-size: 30px;
   font-weight: 800;
-  background-color: var(--myBlack);
-  color: var(--myWhite);
-  padding: 0px;
-  max-width: 30px;
-  max-height: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 0px;
+  max-height: 30px;
+  max-width: 30px;
+  padding: 0px;
 }
 
 .buttonleft {
+  align-items: center;
+  background-color: var(--myBlack);
+  border: 0px;
+  border-radius: 5px 0px 0px 5px;
+  color: var(--myWhite);
+  display: flex;
   font-size: 30px;
   font-weight: 800;
-  background-color: var(--myBlack);
-  color: var(--myWhite);
-  padding: 0px;
-  max-width: 30px;
-  max-height: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 5px 0px 0px 5px;
-  transition: opacity 0.2s;
+  max-height: 30px;
+  max-width: 30px;
+  padding: 0px;
   padding-bottom: 2px;
-  border: 0px;
   padding-top: 2px;
+  transition: opacity 0.2s;
 }
 
 .buttonright {
+  align-items: center;
+  background-color: var(--myBlack);
+  border: 0px;
+  border-radius: 0px 5px 5px 0px;
+  color: var(--myWhite);
+  display: flex;
   font-size: 30px;
   font-weight: 800;
-  background-color: var(--myBlack);
-  color: var(--myWhite);
-  padding: 0px;
-  border: 0px;
-  max-width: 30px;
-  max-height: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 0px 5px 5px 0px;
-  transition: opacity 0.2s;
+  max-height: 30px;
+  max-width: 30px;
+  padding: 0px;
   padding-bottom: 2px;
   padding-top: 2px;
+  transition: opacity 0.2s;
 }
 
 .addbutton {
+  align-items: center;
+  background-color: var(--myGreen);
+  border: 0px;
+  border-radius: 20px;
+  color: var(--myWhite);
+  display: flex;
   font-size: 15px;
   font-weight: 800;
-  background-color: var(--myGreen);
-  color: var(--myWhite);
-  padding: 0px;
-  border: 0px;
-  min-height: 30px;
-  width: 100px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  transition: opacity 0.2s;
+  min-height: 30px;
+  padding: 0px;
   padding-bottom: 2px;
   padding-top: 2px;
+  transition: opacity 0.2s;
   transition: scale 0.2s;
+  width: 100px;
 }
 
-.addbutton:hover{
-  transition: scale 125ms;
-  scale:0.98;
+.addbutton:hover {
   cursor: pointer;
+  scale: 0.98;
+  transition: scale 125ms;
 }
-
 
 .buttonleft:hover,
 .buttonright:hover {
   opacity: 0.8;
 }
 .input {
-  height: 20px;
-  width: 50px;
-  border-radius: 0px;
   border: 1px solid #00000052;
-  text-align: center;
-  vertical-align: middle;
+  border-radius: 0px;
+  height: 20px;
   margin: 0px;
   padding-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
 }
 .icon {
   height: 10px;

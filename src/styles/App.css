@@ -9,13 +9,13 @@
 }
 
 :root {
-  --myWhite: #fffffa;
-  --myGreen: #2A7A56;
-  --myGold: #ffcc4c;
   --myBlack: #131200;
+  --myGold: #ffcc4c;
+  --myGreen: #2a7a56;
+  --myWhite: #fffffa;
 }
 
-body{
+body {
   font-family: PlayFair;
 }
 
@@ -29,9 +29,9 @@ body{
 
 ::-webkit-scrollbar-thumb {
   background-color: #cbcbcb;
+  border: 0.1px solid #b7b7b7;
   outline: 2px solid #fff;
   outline-offset: -2px;
-  border: 0.1px solid #b7b7b7;
 }
 
 ::-webkit-scrollbar-thumb:hover {

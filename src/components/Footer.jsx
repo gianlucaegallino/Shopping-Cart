@@ -21,7 +21,11 @@ export default function Footer() {
         <h4>Useful links</h4>
         <p className={s.link}>About</p>
         <p className={s.link}>Contact</p>
-        <p className={s.link}><Link className={s.link} to="/shop">Shop</Link></p>
+        <p className={s.link}>
+          <Link className={s.link} to="/shop">
+            Shop
+          </Link>
+        </p>
         <p className={s.link}>Employment</p>
         <p className={s.link}>Terms of Service</p>
       </div>

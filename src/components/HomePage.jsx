@@ -6,8 +6,7 @@ export default function HomePage() {
   return (
     <div className={s.storePage}>
       <Hero />
-      <Carousel amount={10}/>
-
+      <Carousel amount={10} />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 .item {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 .list {
   width: 100%;
@@ -15,8 +15,7 @@
   margin: 5px;
 }
 
-
 .fallback {
-  text-align: center;
   opacity: 0.6;
+  text-align: center;
 }

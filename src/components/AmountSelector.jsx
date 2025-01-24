@@ -3,6 +3,7 @@ import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
 import { useContext } from "react";
 import { CartContext } from "./cartContext";
+import PropTypes from "prop-types";
 
 export default function AmountSelector({ id }) {
   const [value, setValue] = useState(0);
@@ -45,3 +46,7 @@ export default function AmountSelector({ id }) {
     </>
   );
 }
+
+AmountSelector.propTypes = {
+  id: PropTypes.number,
+};

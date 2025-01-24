@@ -1,4 +1,5 @@
 import s from "../styles/OrderSummary.module.css";
+import PropTypes from "prop-types";
 
 function getSum(total, num) {
   return total + num;
@@ -11,14 +12,12 @@ export default function OrderSummary({ items = [] }) {
   let taxes = 0;
 
   if (items.length > 0) {
-
     let prices = items.map((item) => item.price * item.amount);
     let quantities = items.map((item) => item.amount);
 
     total = prices.reduce(getSum, 0);
     taxes = total * 0.21;
     totalWithTaxes = total + taxes;
-
 
     let finalQuant = quantities.reduce(getSum, 0);
 
@@ -41,3 +40,7 @@ export default function OrderSummary({ items = [] }) {
   }
   return <div className={s.list}>{display}</div>;
 }
+
+OrderSummary.propTypes = {
+  items: PropTypes.array,
+};

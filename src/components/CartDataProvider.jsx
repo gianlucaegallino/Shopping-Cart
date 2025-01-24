@@ -2,11 +2,9 @@ import { useState } from "react";
 import { CartContext } from "./cartContext.js";
 import { useContext } from "react";
 import { ProductContext } from "./productContext.js";
+import PropTypes from "prop-types";
 
 //Cart data provider
-
-//TODO: Add props
-//TODO: Add validations, status, etc.
 
 export default function CartDataProvider({ children }) {
   //gets products from upper context
@@ -56,10 +54,6 @@ export default function CartDataProvider({ children }) {
     setCartItems([]);
   };
 
-  //TODO: Implement decrease and increase
-  const increase = () => {};
-  const decrease = () => {};
-
   return (
     <CartContext.Provider
       value={{ cartItems, addToCart, removeFromCart, clearCart }}
@@ -68,3 +62,7 @@ export default function CartDataProvider({ children }) {
     </CartContext.Provider>
   );
 }
+
+CartDataProvider.propTypes = {
+  children: PropTypes.object,
+};

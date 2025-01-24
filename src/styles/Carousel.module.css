@@ -1,22 +1,23 @@
 .carousel {
+  animation-direction: alternate;
+  animation-duration: 180s;
+  animation-iteration-count: infinite;
+  animation-name: scrollInfinite;
+  animation-timing-function: linear;
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  animation-timing-function: linear;
-  animation-duration: 180s;
-  animation-name: scrollInfinite;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 .header {
-  text-align: center;
   font-size: 40px;
+  text-align: center;
 }
 
-.link{
+.link {
   text-decoration: none;
-  color:var(--myBlack)
+
+  color: var(--myBlack);
 }
 
 @keyframes scrollInfinite {
@@ -31,9 +32,9 @@
 
 @media (max-width: 1100px) {
   .carousel {
+    animation-name: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     width: 100vw;
-    animation-name: none;
   }
 }
