@@ -1,16 +1,15 @@
 .heroSection {
   align-items: center;
   background-color: var(--myBlack);
-  background-position: center;
-  background-size: cover;
   color: var(--myWhite);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   min-height: 850px;
   padding: 0px 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/hero.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .heroElements {
   align-items: flex-start;
