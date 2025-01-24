@@ -19,6 +19,7 @@ export default function OrderSummary({ items = [] }) {
     taxes = total * 0.21;
     totalWithTaxes = total + taxes;
 
+
     let finalQuant = quantities.reduce(getSum, 0);
 
     display = (

@@ -26,6 +26,10 @@ svg:hover, .link:hover {
 .link{
   color: var(--myBlack);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .buttons {
   display: flex;
@@ -33,6 +37,13 @@ svg:hover, .link:hover {
   gap: 40px;
   align-items: center;
   justify-content: center;
+  color: var(--myBlack);
+}
+
+.number{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
   color: var(--myBlack);
 }
 
