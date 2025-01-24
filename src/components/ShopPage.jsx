@@ -7,7 +7,6 @@ export default function ShopPage() {
   return (
     <div className={s.shopPage}>
       <ShopSidebar />
-
       <SearchArea />
       <ProductArea />
     </div>

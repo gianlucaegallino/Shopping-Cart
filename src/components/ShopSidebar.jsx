@@ -1,39 +1,17 @@
 import s from "../styles/ShopSidebar.module.css";
 import ItemList from "./ItemList";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "./cartContext";
+
 export default function ShopSidebar() {
+  const { cartItems } = useContext(CartContext);
+
   return (
     <div className={s.sidebar}>
       <div className={s.container}>
         <h2 className={s.title}>Selected Items</h2>
-        <ItemList
-          items={[
-            {
-              name: "Green Pendant Necklace",
-              amount: 1,
-              price: 25.99,
-              key: "gp",
-            },
-            {
-              name: "Black Cotton T-Shirt",
-              amount: 2,
-              price: 15.49,
-              key: "bc",
-            },
-            {
-              name: "Gold Ring",
-              amount: 1,
-              price: 45.0,
-              key: "gr",
-            },
-            {
-              name: "Nature Print Hoodie",
-              amount: 1,
-              price: 35.99,
-              key: "np",
-            },
-          ]}
-        />
+        <ItemList items={cartItems} />
       </div>
 
       <Link className={s.li} to="/cart">

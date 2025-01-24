@@ -1,10 +1,14 @@
 import s from "../styles/CartItemList.module.css";
+import { useContext } from "react";
+import { CartContext } from "./cartContext";
 
-export default function ItemList({ items = [] }) {
+export default function ItemList() {
+  const { cartItems } = useContext(CartContext);
+
   let display = <p className={s.fallback}> There is nothing here yet.</p>;
 
-  if (items.length > 0) {
-    display = items.map((item) => {
+  if (cartItems.length > 0) {
+    display = cartItems.map((item) => {
       return (
         <div className={s.item} key={item.key}>
           <p className={s.itemtext}>{item.name}</p>
