@@ -28,6 +28,13 @@
   border: 2px solid var(--myGreen);
 }
 
+@media (max-width: 1500px) {
+  .searchArea{
+    height: 80px;
+  }
+}
+
+
 @media (max-width: 1200px) {
   .searchArea {
     justify-content: space-between;

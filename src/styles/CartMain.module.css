@@ -1,3 +1,14 @@
 .cartMain{
-    background-color: beige;
+    background-color: var(--myWhite);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
 }
+
+.title{
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+}
+

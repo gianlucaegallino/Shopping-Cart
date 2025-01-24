@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.list {
+  width: 100%;
+}
+
+.itemtext {
+  margin: 5px;
+}
+
+.fallback {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: 20px;
+}

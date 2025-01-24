@@ -1,10 +1,25 @@
-.shopPage{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 10fr;
-    
+.shopPage {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr;
 }
 
-.shopMainSection{
-    grid-row: 1/3;
+.shopMainSection {
+  grid-row: 1/3;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+  .button {
+    max-width: 80%;
+  }
+
+  .shopPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

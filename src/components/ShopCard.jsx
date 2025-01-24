@@ -14,7 +14,7 @@ export default function ShopCard({
           <div className={s.namediv}>
             <p className={s.name}>{prodName}</p>
           </div>
-          <p>{"$" + price}</p>
+          <p className={s.item}>{"$" + price}</p>
         </div>
         <div className={s.line}>
           <AmountSelector />

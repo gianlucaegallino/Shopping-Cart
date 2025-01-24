@@ -1,4 +1,3 @@
-
 import s from "../styles/ShopSidebar.module.css";
 import ItemList from "./ItemList";
 import { Link } from "react-router-dom";
