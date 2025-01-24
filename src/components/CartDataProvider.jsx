@@ -20,7 +20,6 @@ export default function CartDataProvider({ children }) {
     const pos = products.map((e) => e.id).indexOf(id);
     const prc = products[pos].price;
     const nm = products[pos].title;
-    console.log(products[pos]);
 
     //check if the item is present in the cart
 

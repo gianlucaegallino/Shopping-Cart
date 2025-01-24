@@ -3,9 +3,12 @@ export default function SearchArea() {
   return (
     <div className={s.searchArea}>
       <h2 className={s.title}>Shop </h2>
-      <input className={s.input}
+      {
+        //Some day, ill implement this. The day is not today.
+        /*       <input className={s.input}
         placeholder="What are you looking for?"
-      ></input>
+      ></input> */
+      }
     </div>
   );
 }

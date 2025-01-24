@@ -48,6 +48,12 @@
   .container {
     gap:0px;
     margin-bottom: 20px;
+
+  }
+
+  .sidebar{
+    justify-content: space-evenly;
+    height: fit-content;
   }
   .button{
     max-width: 80%;

@@ -1,8 +1,8 @@
 .item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+grid-template-columns: 6fr 1fr  1fr 40px;
+align-items: center;
+justify-content: center;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -28,4 +28,28 @@
 .fallback {
   text-align: center;
   opacity: 0.6;
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.button{
+  height: 30px;
+  width: 30px;
+  background-color: rgb(230, 24, 24);
+  border: 0px;
+  border-radius: 5px;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--myWhite);
+  margin-right: 10px;
+}
+
+.button:hover{
+  opacity: 0.9;
 }
