@@ -9,7 +9,7 @@ export default function ShopCard({
   id = 0,
 }) {
   return (
-    <div className={s.shopCard} key={id}>
+    <div className={s.shopCard} data-testid="shc" key={id}>
       <img className={s.img} src={imageUrl} alt={prodName} />
       <div className={s.info}>
         <div className={s.line}>

@@ -7,7 +7,7 @@ export default function CoolCard({
 }) {
   return (
     <div className={s.coolCard}>
-      <img src={imageUrl} alt={prodName} />
+      <img src={imageUrl} alt={prodName}/>
       <div className={s.line}>
         <div className={s.namediv}>
           <p className={s.name}>{prodName}</p>

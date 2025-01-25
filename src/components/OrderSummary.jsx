@@ -6,7 +6,7 @@ function getSum(total, num) {
 }
 
 export default function OrderSummary({ items = [] }) {
-  let display = <p className={s.fallback}> There is nothing here yet.</p>;
+  let display = <p data-testid="fb" className={s.fallback}>There is nothing here yet.</p>;
   let total = 0;
   let totalWithTaxes = 0;
   let taxes = 0;
@@ -24,16 +24,16 @@ export default function OrderSummary({ items = [] }) {
     display = (
       <>
         <p className={s.summaryItem}>
-          Item Quantity: <b>{finalQuant}</b>
+          Item Quantity: <b data-testid="qt">{finalQuant}</b>
         </p>
         <p className={s.summaryItem}>
-          Order price: <b>{"$" + total.toFixed(2)}</b>
+          Order price: <b data-testid="total">{"$" + total.toFixed(2)}</b>
         </p>
         <p className={s.summaryItem}>
-          Tax (21%): <b>{"$" + taxes.toFixed(2)}</b>
+          Tax (21%): <b data-testid="tax">{"$" + taxes.toFixed(2)}</b>
         </p>
         <p className={s.summaryItem}>
-          Total after taxes: <b>{"$" + totalWithTaxes.toFixed(2)}</b>
+          Total after taxes: <b data-testid="total+tax">{"$" + totalWithTaxes.toFixed(2)}</b>
         </p>
       </>
     );

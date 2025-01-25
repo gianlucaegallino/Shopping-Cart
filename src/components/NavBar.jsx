@@ -33,7 +33,7 @@ export default function NavBar() {
         <Link className={style.link} to="/cart">
           {" "}
           <ShoppingCart color="black" size={28} />
-          <p className={style.number}>{amt}</p>
+          <p className={style.number} data-testid="number">{amt}</p>
         </Link>
       </div>
     </div>
