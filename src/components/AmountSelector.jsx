@@ -39,15 +39,15 @@ export default function AmountSelector({ id }) {
   return (
     <>
       <div className={s.amountSelector}>
-        <button className={s.buttonleft} onClick={handleLess}>
+        <button className={s.buttonleft} onClick={handleLess}placeholder="minus">
           <Minus />
         </button>
         <input type="text" className={s.input} value={value} onChange={handleChange} />
-        <button className={s.buttonright} onClick={handleMore}>
+        <button className={s.buttonright} onClick={handleMore} placeholder="plus">
           <Plus />
         </button>
       </div>
-      <button className={s.addbutton} onClick={handleAdd}>
+      <button className={s.addbutton} onClick={handleAdd} placeholder="addToCart">
         Add
       </button>
     </>

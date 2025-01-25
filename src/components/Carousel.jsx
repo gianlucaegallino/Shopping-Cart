@@ -5,10 +5,10 @@ import s from "../styles/Carousel.module.css";
 import { ProductContext } from "./productContext.js";
 import { Link } from "react-router-dom";
 
-export default function Carousel({ amount = 6 }) {
+export default function Carousel({ amount = 0 }) {
   //gets products from upper context
   const products = useContext(ProductContext);
-
+console.log(products)
   //grabs products arbitrarily to display based on amount
   let prods;
 
@@ -19,7 +19,7 @@ export default function Carousel({ amount = 6 }) {
   let render = prods.map((p) => {
     return (
       <Link key={p.id} className={s.link} to="/shop">
-        <CoolCard prodName={p.title} imageUrl={p.image} price={p.price} />
+        <CoolCard prodName={p.title} imageUrl={p.image} price={p.price}/>
       </Link>
     );
   });
